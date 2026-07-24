@@ -2,7 +2,7 @@ import {
   SiPython,
   SiPostgresql,
   SiGooglesheets,
-  SiLooker,
+  SiPowers,
   SiGooglebigquery
 } from "react-icons/si";
 import {
@@ -23,7 +23,7 @@ const GROUPS = [
     ]
   },
   {
-    title: 'Data Analytic\nTools',
+    title: 'Data Analytics\nTools',
     items: [
       { name: 'Microsoft Excel', icon: <FaFileExcel /> },
       { name: 'Google Sheets', icon: <SiGooglesheets /> },
@@ -35,21 +35,28 @@ const GROUPS = [
     title: 'Data Visualization\nTools',
     items: [
       { name: 'Tableau', icon: <FaChartPie /> },
-      { name: 'Looker Studio', icon: <SiLooker /> },
+      { name: 'Power BI', icon: <SiPowers /> },
     ]
   },
 ];
 
 const METHODS = [
-  'EDA',
-  'Segmentation / Clustering',
-  'Cohort',
-  'Linear Regression',
-  'Logistic Regression',
-  'Statistic',
-  'A/B Testing',
-  'ANOVA',
-  '(Post-Hoc) T-Test'
+  'Data Cleaning',
+  'Data Transformation',
+  'Descriptive Analytics',
+  'Exploratory Data Analysis (EDA)',
+  'Data Visualization',
+  'Trend Analysis',
+  'Comparative Analysis',
+  'Customer Segmentation Analysis',
+  'Inventory Analysis',
+  'KPI Analysis',
+  'Pivot Table Analysis',
+  'Lookup Analysis (VLOOKUP & XLOOKUP)',
+  'Dashboard Reporting',
+  'Business Performance Analysis',
+  'Basic Data Aggregation and Summarization',
+  'Data Validation and Quality Checks',
 ];
 
 export default function SkillsSection() {
@@ -136,7 +143,7 @@ export default function SkillsSection() {
         <StaggerContainer className="flex flex-col gap-10 lg:px-10 border-white/5">
           <StaggerItem direction="down" distance={10}>
             <h3 className="text-xl md:text-2xl font-bold leading-tight text-highlight whitespace-pre-line tracking-tight font-display">
-              Data Analytic {'\n'} Methods
+              Data Analytics {'\n'} Methods
             </h3>
           </StaggerItem>
           
